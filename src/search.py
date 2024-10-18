@@ -35,9 +35,6 @@ def bfs(game):
 
             discovered.add(clone)
 
-            if not clone.valid_state:
-                continue
-
             new_node = Node(clone, move, node)
 
             if clone.victory:
