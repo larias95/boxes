@@ -1,7 +1,8 @@
 import sys
 
 from game import Game
-from search import bfs
+from heuristics import min_match
+from search import astar, bfs
 
 
 def parse(g: str):
@@ -50,7 +51,8 @@ if __name__ == "__main__":
     with open(f"./levels/level_{lv}.txt") as file:
         g = parse(file.read())
 
-    solution = bfs(g)
+    # solution = bfs(g)
+    solution = astar(g, min_match(g._dots))
 
     if solution is not None:
         print_solution(solution)
