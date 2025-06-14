@@ -2,7 +2,7 @@
 
 Example of solving Sokoban game using BFS, or A* with linear assignment (Hungarian algorithm) heuristic.
 
-![captura](./docs/Captura desde 2024-10-13 19-49-59.png)
+![captura](./docs/captura.png)
 
 ## Usage
 
